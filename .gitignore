@@ -1,0 +1,11 @@
+.env
+
+dist/
+tmp/
+
+*.zip
+
+# rendered from *.json.tmpl via ACCOUNT_ID/BUCKET_NAME env vars — see README
+destination-config.json
+policies/*.json
+!policies/trust-policy.json
