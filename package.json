@@ -1,0 +1,22 @@
+{
+  "name": "aws-lab",
+  "version": "0.1.0",
+  "description": "The way that I learn has really solidified the older I've gotten. I'm very hands on and need projects and time to explore the platform for concept. The wheels start turning and I have mini-brain-blast moments that bring everything together.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "policies": "python scripts/render_policies.py"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fergatron/aws-lab_dva-c02.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/fergatron/aws-lab_dva-c02/issues"
+  },
+  "homepage": "https://github.com/fergatron/aws-lab_dva-c02#readme"
+}

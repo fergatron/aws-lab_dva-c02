@@ -1,0 +1,5 @@
+{
+	"OnFailure": {
+		"Destination": "arn:aws:sqs:us-east-1:926253203311:lambda-lab-dlq"
+	}
+}

@@ -5,7 +5,6 @@ tmp/
 
 *.zip
 
-# rendered from *.json.tmpl via ACCOUNT_ID/BUCKET_NAME env vars — see README
-destination-config.json
+# rendered from templates/*.json.tmpl by `npm run policies` — see README
 policies/*.json
 !policies/trust-policy.json

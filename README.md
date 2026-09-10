@@ -21,6 +21,7 @@ VIRTUAL_ENV=
 BUCKET_ARN=
 UPLOAD_URL_INTEGRATION_ID=
 PROCESS_UPLOAD_ARN=
+TABLE_ARN=
 ```
 
 ## Policy / config templates
@@ -33,15 +34,13 @@ account ID isn't published in a public repo.
 Render the working `.json` files locally before using them with the AWS CLI:
 
 ```bash
-set -a && source .env && set +a
-
-for f in templates/*.json.tmpl; do
-  envsubst < "$f" > "policies/${f%.tmpl}"
-done
+npm run policies
 ```
 
-The rendered `.json` files are gitignored — re-run the snippet above any time
-you pull the repo fresh or change `.env`.
+This runs `scripts/render_policies.py`, which reads `templates/*.json.tmpl`,
+substitutes `${VAR}` placeholders from `.env` / the environment, and writes
+the result to `policies/`. The rendered `.json` files are gitignored —
+re-run the command any time you pull the repo fresh or change `.env`.
 
 ## Refresh Token
 
